@@ -178,7 +178,7 @@ button img {
     }
 
     body {
-        background: var(--light-pink) url(../assets/images/background-pattern-desktop.svg) center top/100% 20rem no-repeat;
+        background: var(--light-pink) url(assets/images/background-pattern-desktop.svg) center top/100% 20rem no-repeat;
     }
 
     h1 {
