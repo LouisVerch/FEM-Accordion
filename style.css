@@ -79,7 +79,6 @@ body {
     min-height: 100svh;
     font-family: var(--font-family);
     background: var(--light-pink) url(/images/background-pattern-mobile.svg) center top/100% 13.5rem no-repeat;
-    /* padding: 8.875rem 1.563rem; */
 }
 
 main {
