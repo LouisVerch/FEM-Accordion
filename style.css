@@ -4,7 +4,7 @@
     --light-pink: hsl(275, 100%, 97%);
     --grayish-purple: hsl(292, 16%, 49%);
     --dark-purple: hsl(292, 42%, 14%);
-
+    --strong-purple: #aa27e5;
     /* Typography */
     --font-family: 'Work Sans', sans-serif;
 
@@ -46,6 +46,7 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+
 }
 
 /* 6. Inherit fonts for form controls */
@@ -76,16 +77,124 @@ h6 {
 
 body {
     min-height: 100svh;
-    background-color: var(--grayish-purple);
+    font-family: var(--font-family);
+    background: var(--light-pink) url(../assets/images/background-pattern-mobile.svg) center top/100% 13.5rem no-repeat;
+    /* padding: 8.875rem 1.563rem; */
 }
 
-.bg-img-container {
-    width: 100%;
-    height: 14.5rem;
-    background: url(/images/background-pattern-mobile.svg) no repeat;
+main {
+    padding: 8.875rem 1.563rem;
 }
 
 .main-container {
-    padding: 8.875rem 1.563rem;
-    background: white;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.563rem 0 1.563rem;
+    box-shadow: rgb(155, 155, 155) 1px 1px 5px;
+}
+
+.header {
+    display: flex;
+    gap: 2rem
+}
+
+.header img {
+    max-width: 1.5rem;
+}
+
+h1 {
+    color: var(--dark-purple);
+    font-weight: var(--font-weight-bold);
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 0.92rem;
+    border-top: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    border-left: none;
+    border-right: none;
+    background: #fff;
+    padding: 1rem 0;
+    font-weight: var(--font-weight-medium);
+}
+
+button:first-of-type {
+    border-top: none;
+}
+
+button:last-of-type {
+    border-bottom: none;
+}
+
+.active,
+button:hover {
+    cursor: pointer;
+    color: var(--strong-purple);
+}
+
+.active {
+    border: none;
+}
+
+.icon-minus {
+    display: none;
+}
+
+.active .icon-plus {
+    display: none;
+}
+
+.active .icon-minus {
+    display: block;
+}
+
+.panel {
+    color: var(--grayish-purple);
+    font-size: 0.85rem;
+    padding: 0.9rem 0;
+    display: none;
+}
+
+button img {
+    padding-left: 3rem;
+}
+
+@media screen and (min-width:48em) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container {
+        max-width: 37.5rem;
+        padding: 3rem 2.6rem 2.5rem 2.6rem;
+    }
+
+    body {
+        background: var(--light-pink) url(../assets/images/background-pattern-desktop.svg) center top/100% 20rem no-repeat;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .header img {
+        max-width: 2rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
 }
