@@ -83,12 +83,16 @@ body {
 
 main {
     padding: 8.875rem 1.563rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     background: #fff;
+    max-width: 37.5rem;
     border-radius: 0.5rem;
     padding: 1.2rem 1.563rem 0 1.563rem;
     box-shadow: rgb(155, 155, 155) 1px 1px 5px;
@@ -131,7 +135,6 @@ button:last-of-type {
     border-bottom: none;
 }
 
-.active,
 button:hover {
     cursor: pointer;
     color: var(--strong-purple);
@@ -156,8 +159,13 @@ button:hover {
 .panel {
     color: var(--grayish-purple);
     font-size: 0.85rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+p {
     padding: 0.9rem 0;
-    display: none;
 }
 
 button img {
@@ -165,15 +173,9 @@ button img {
 }
 
 @media screen and (min-width:48em) {
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .main-container {
-        max-width: 37.5rem;
-        padding: 3rem 2.6rem 2.5rem 2.6rem;
+        padding: 2rem 2.6rem 2rem 2.6rem;
     }
 
     body {
