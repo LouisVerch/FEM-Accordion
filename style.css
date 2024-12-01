@@ -78,7 +78,7 @@ h6 {
 body {
     min-height: 100svh;
     font-family: var(--font-family);
-    background: var(--light-pink) url(/images/background-pattern-mobile.svg) center top/100% 13.5rem no-repeat;
+    background: var(--light-pink) url(https://louisverch.github.io/FEM-Accordion/images/background-pattern-mobile.svg) center top/100% 13.5rem no-repeat;
 }
 
 main {
@@ -177,7 +177,7 @@ button img {
     }
 
     body {
-        background: var(--light-pink) url(images/background-pattern-desktop.svg) center top/100% 20rem no-repeat;
+        background: var(--light-pink) url(https://louisverch.github.io/FEM-Accordion/images/background-pattern-desktop.svg) center top/100% 20rem no-repeat;
     }
 
     h1 {
